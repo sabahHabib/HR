@@ -1,0 +1,33 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Sabah",email = "saba99minhas@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.115.8,<0.116.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "sqlalchemy (>=2.0.38,<3.0.0)",
+    "pydantic-extra-types (>=2.10.2,<3.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "python-jose (>=3.3.0,<4.0.0)",
+    "passlib[bcrypt] (>=1.7.4,<2.0.0)",
+    "pipenv (>=2024.4.1,<2025.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "phonenumbers (>=8.13.55,<9.0.0)",
+    "email-validator (>=2.2.0,<3.0.0)",
+    "python-multipart (>=0.0.20,<0.0.21)",
+    "alembic (>=1.14.1,<2.0.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+]
+
+[tool.poetry]
+packages = [{include = "", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
